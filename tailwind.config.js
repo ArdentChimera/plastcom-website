@@ -6,14 +6,14 @@ module.exports = withMT({
 	theme: {
 		extend: {
 			backgroundImage: {
-				"industrial-hall": "url('./public/images/industrial-hall.jpg')",
-				"sveta-sofia": "url('./public/images/sveta-sofia.png')",
-				provet: "url('./public/images/provet.png')",
-				genika: "url('./public/images/genika.png')",
-				pulmed: "url('./public/images/pulmed.png')",
-				checkmark: "url('./public/images/checkmark.png')",
-				contacts: "url('./public/images/contacts.png')",
-				"product-image": "url('./public/images/product-image.png')",
+				"industrial-hall": "url('/images/industrial-hall.jpg')",
+				"sveta-sofia": "url('/images/sveta-sofia.png')",
+				provet: "url('/images/provet.png')",
+				genika: "url('/images/genika.png')",
+				pulmed: "url('/images/pulmed.png')",
+				checkmark: "url('/images/checkmark.png')",
+				contacts: "url('/images/contacts.png')",
+				"product-image": "url('/images/product-image.png')",
 			},
 		},
 	},
