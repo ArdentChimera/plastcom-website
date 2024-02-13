@@ -1,30 +1,29 @@
+import { NavLink, Outlet } from "react-router-dom";
+
 const Navbar = () => {
 	return (
-		<div className="navbar bg-base-100">
-			<div className="flex-1">
-				<a className="btn btn-ghost text-xl">daisyUI</a>
+		<>
+			<div className="grid grid-cols-4 gap-4 sticky top-0 z-50">
+				<div className=" col-span-4 rounded-lg bg-green-700 opacity-95 shadow-2xl h-20 p-6">
+					<div className="flex justify-between ">
+						<h1 className="text-green-100 text-2xl font-bold">Logo</h1>
+						<ul className="flex gap-6 text-green-100 font-bold">
+							<li>
+								<NavLink to="/home">Home</NavLink>
+							</li>
+							<li>
+								<NavLink to="/about">About</NavLink>
+							</li>
+							<li>
+								<NavLink to="/products">Products</NavLink>
+							</li>
+							<li>More</li>
+						</ul>
+					</div>
+				</div>
 			</div>
-			<div className="flex-none">
-				<ul className="menu menu-horizontal px-1">
-					<li>
-						<a>Link</a>
-					</li>
-					<li>
-						<details>
-							<summary>Parent</summary>
-							<ul className="p-2 bg-base-100 rounded-t-none">
-								<li>
-									<a>Link 1</a>
-								</li>
-								<li>
-									<a>Link 2</a>
-								</li>
-							</ul>
-						</details>
-					</li>
-				</ul>
-			</div>
-		</div>
+			<Outlet />
+		</>
 	);
 };
 
