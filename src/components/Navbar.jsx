@@ -9,7 +9,7 @@ const Navbar = () => {
 						<h1 className="text-green-100 text-2xl font-bold">Logo</h1>
 						<ul className="flex gap-6 text-green-100 font-bold">
 							<li>
-								<NavLink to="/home">Home</NavLink>
+								<NavLink to="/">Home</NavLink>
 							</li>
 							<li>
 								<NavLink to="/about">About</NavLink>
